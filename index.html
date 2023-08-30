@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/bf4a898009.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="wrapper-bar">
+
+    
+      <div class="sidebar">
+          <!-- search-bar space -->
+          <div class="searchbar ">
+              <form>
+                  <button id="searchButton" type="submit">Submit</button>
+                  <input id="searchBox" type="text" placeholder="Search City">
+                  
+              </form>
+              <ul class="dropdown" id="suggestions"></ul>
+          </div>
+
+          <!-- here goes weather icon -->
+          <div class="cloud">
+              <img class="img-bar" src="./images/rain-smiley.png"/>
+          </div>
+          
+          <!-- location details -->
+          <div class="location">
+              <!-- insert location icon before this -->
+              <i class="fa-solid fa-location-dot"></i>
+              <div>Bangalore, India</div>
+              
+          </div>
+
+          <!-- temperature display -->
+          <div class="temp-bar">
+              22&deg;C
+          </div>
+
+          <!-- day and time -->
+          <div class="day">
+              Monday, 10:00 AM
+          </div>
+
+          <hr>
+
+          <div class="heading">
+              The Next Day Forecast
+          </div>
+
+          <!-- days toggle -->
+          <div class="daily">
+              <div class="daytwo">
+                 2 Days
+              </div>
+              <div class="dayseven">
+                  7 Days
+              </div>
+          </div>
+
+          <div>
+              <div>
+                  Tue, July 25
+              </div>
+          </div>
+          <div>
+              <div>
+                 Wed, July 26
+              </div>
+          </div>
+
+
+      </div>
+  </div>
+
+
+    <!-- main -->
+
+    <div class="main">
+      <!-- Lokesh -->
+      <h1 class="weather-condition">Sunny</h1>
+        <ul class="cards">
+          <li class="card">
+            <h2 class="day-name">Tuesday</h2>
+            <div class="card-icon">
+              <img src="./images/clouds.png" alt="no-image" />
+            </div>
+            <div class="day-temp">
+              <h2 class="temp">32</h2>
+              <span class="temp-unit"> °C</span>
+            </div>
+          </li>
+          <li class="card">
+            <h2 class="day-name">Wednesday</h2>
+            <div class="card-icon">
+              <img src="./images/clear1.png" alt="no-image" />
+            </div>
+            <div class="day-temp">
+              <h2 class="temp">32</h2>
+              <span class="temp-unit"> °C</span>
+            </div>
+          </li>
+          <li class="card">
+            <h2 class="day-name">Thursday</h2>
+            <div class="card-icon">
+              <img src="./images/clear1.png" alt="no-image" />
+            </div>
+            <div class="day-temp">
+              <h2 class="temp">32</h2>
+              <span class="temp-unit"> °C</span>
+            </div>
+          </li>
+          <li class="card">
+            <h2 class="day-name">Friday</h2>
+            <div class="card-icon">
+              <img src="./images/clear1.png" alt="no-image" />
+            </div>
+            <div class="day-temp">
+              <h2 class="temp">32</h2>
+              <span class="temp-unit"> °C</span>
+            </div>
+          </li>
+          <li class="card">
+            <h2 class="day-name">Saturday</h2>
+            <div class="card-icon">
+              <img src="./images/clear1.png" alt="no-image" />
+            </div>
+            <div class="day-temp">
+              <h2 class="temp">32</h2>
+              <span class="temp-unit"> °C</span>
+            </div>
+          </li>
+          <li class="card">
+            <h2 class="day-name">Sunday</h2>
+            <div class="card-icon">
+              <img src="./images/clear1.png" alt="no-image" />
+            </div>
+            <div class="day-temp">
+              <h2 class="temp">32</h2>
+              <span class="temp-unit"> °C</span>
+            </div>
+          </li>
+        </ul>
+
+
+      <!-- my part -->
+
+      <div class="highlights">
+        <h2 class="heading">Today's Highlights</h2>
+        <div class="cards">
+
+          <div class="card2">
+            <h4 class="card-heading">UV index</h4>
+            <div class="content">
+              <p class="uv-index">0</p>
+              <p class="uv-text">sun protection recommended.</p>
+            </div>
+          </div>
+
+          <div class="card2">
+            <h4 class="card-heading">Wind Status</h4>
+            <div class="content">
+              <p class="wind-speed">20 kmph</p>
+              <p class="wind-dir">Wind Direction West to East.</p>
+            </div>
+          </div>
+
+          <div class="card2">
+            <h4 class="card-heading">Rainfall</h4>
+            <div class="content">
+              <p class="rain-fall">20 mm</p>
+              <p class="rain-fcast">heavy rain expected.</p>
+            </div>
+          </div>
+
+          <div class="card2">
+            <h4 class="card-heading">Humidity</h4>
+            <div class="content">
+              <p class="humidity-per">80%</p>
+              <p class="dew-point">The dew point is 26 right now.</p>
+            </div>
+          </div>
+
+          <div class="card2">
+            <h4 class="card-heading">Feels Like</h4>
+            <div class="content">
+              <p class="feels-temp">40°C</p>
+              <p class="feels-text">The humidity is making it feel warmer.</p>
+            </div>
+          </div>
+
+          <div class="card2">
+            <h4 class="card-heading">Sunset</h4>
+            <div class="content">
+              <p class="sunset-time">6:42 PM</p>
+              <p class="sunrise-time">Next day sunrise at 5:28 AM.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

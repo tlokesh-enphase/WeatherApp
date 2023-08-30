@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "path": "../../../Desktop/untitled folder"
+    },
+    {
+      "path": "../.."
+    },
+    {
+      "path": "../../../Desktop/mock"
+    }
+  ],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "untitled folder"
+  }
+}
