@@ -13,7 +13,8 @@ body{
   min-width: 100vw;
   padding: 50px;
   /* background-image: url("./images/back-rain.jpeg"); */
-  background-color:  rgba(66, 126, 107, 0.967);
+  /* background-color:  rgba(66, 126, 107, 0.967); */
+  background-color: black;
   background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   height: 100%;
 
