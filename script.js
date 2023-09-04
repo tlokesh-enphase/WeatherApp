@@ -18,7 +18,7 @@ function getReady(){
 
   function getLatLongFromAPI (ip) {
     $.ajax({
-        url:  `http://api.ipstack.com/${ip}?access_key=077d8e43b7fca3f7e71fe17ab0a0d8c3`,
+        url:  `https://apiip.net/api/check?ip={ip}&accessKey=e6752ffe-ee9a-4306-8ddd-febb9dae951c`,
         //dataType: JSON,
         success: function (data){
             console.log(((data)));
